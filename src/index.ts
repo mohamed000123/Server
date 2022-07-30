@@ -1,5 +1,6 @@
 import express from "express";
 import bodyParser from "body-parser";
+import {wordsRouter} from "./routes/words.routes";
 
 let cors = require("cors");
 
@@ -12,4 +13,9 @@ app.listen(4000, () => {
 });
 
 app.use(bodyParser.json());
+app.use("/api", wordsRouter);
+
+
+
+
 
