@@ -10,11 +10,12 @@ const words = (req, res) => {
             data
         });
     }
-    catch (_a) {
+    catch (e) {
         res.send({
             status: 500,
             message: "Internal Server Error"
         });
+        throw (e);
     }
 };
 exports.words = words;
@@ -27,11 +28,12 @@ const rank = (req, res) => {
             rank
         });
     }
-    catch (_a) {
+    catch (e) {
         res.send({
             status: 500,
             message: "Internal Server Error"
         });
+        throw (e);
     }
 };
 exports.rank = rank;

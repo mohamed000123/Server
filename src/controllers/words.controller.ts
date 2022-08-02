@@ -8,11 +8,12 @@ try{
     status:200,
     data
   });
-}catch{
+}catch(e){
   res.send({
     status:500,
     message:"Internal Server Error"
   });
+  throw(e);
 }
 };
 
@@ -24,11 +25,12 @@ let rank = wordsService.rank(score);
     status:200,
     rank
   });
-}catch{
+}catch(e){
   res.send({
     status:500,
     message:"Internal Server Error"
   });
+  throw(e);
 }
 };
 
