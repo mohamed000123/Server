@@ -1,5 +1,7 @@
 # backend
 
 # running 
-npm install
-npm start
+
+npm install : to download node modules
+
+npm start : to run the app in the browser
