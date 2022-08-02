@@ -1,1 +1,4 @@
 # backend
+
+# running 
+npm start
